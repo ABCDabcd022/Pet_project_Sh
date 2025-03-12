@@ -4,7 +4,8 @@
 ## План реализации:
 ### I. Source
 #### 1. Собрать и подготовить датаеты для тренировки моделей
-https://github.com/salesforce/booksum
+https://github.com/salesforce/booksum             
+https://github.com/abisee/cnn-dailymail/tree/master?tab=readme-ov-file           
 #### 2. Посмотреть готовые модели для этой задачи
 ##### 1). bart-large-cnn       
 https://huggingface.co/facebook/bart-large-cnn          
