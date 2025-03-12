@@ -6,4 +6,9 @@
 #### 1. Собрать и подготовить датаеты для тренировки моделей
 https://github.com/salesforce/booksum
 #### 2. Посмотреть готовые модели для этой задачи
+##### 1). bart-large-cnn       
+https://huggingface.co/facebook/bart-large-cnn          
+Не поддерживает русский язык.       
+##### 2).      
+
 #### 3. Бейзлайн   
