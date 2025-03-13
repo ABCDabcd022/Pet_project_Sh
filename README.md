@@ -47,6 +47,8 @@ echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
   PTBTokenizer tokenized 7 tokens at 115,97 tokens per second.
 
 Токенизация датасета      
+Скачиваем репозиторий с датасетом:       
+git clone https://github.com/becxer/cnn-dailymail/        
 
 #### 2. Перевести его на русский язык 
 #### 3. Дообучить модель bart-large-cnn, чтобы она работала с русским языком
