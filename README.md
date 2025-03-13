@@ -22,7 +22,30 @@ BART изначально обучалась на большом корпусе 
 После предобучения модель была дообучена на датасете CNN/DailyMail, который содержит новостные статьи и их summaries (краткие описания). Это supervised learning, где модель училась генерировать summaries на основе полного текста.
 
 ### II. Мои действия
-#### 1. Скачать датасет cnn-dailymail
+#### 1. Скачать датасет cnn-dailymail    
+Скачайте файлы cnn_stories.tgz и dailymail_stories.tgz здесь:      
+https://cs.nyu.edu/~kcho/DMQA/          
+Распакуйте их.        
+Скачайте Stanford CoreNLP с официального сайта:       
+https://stanfordnlp.github.io/CoreNLP/            
+Распакуйте архив.       
+Добавьте путь к CoreNLP в переменную окружения CLASSPATH.    
+В cmd:      
+CLASSPATH=C:\00Projects\Pet_project_A_Sh\stanford-corenlp-4.5.8\stanford-corenlp-4.5.8.jar             
+Проверим: echo %CLASSPATH%        
+Вывод: C:\00Projects\Pet_project_A_Sh\stanford-corenlp-4.5.8\stanford-corenlp-4.5.8.jar
+Проверьте, что CoreNLP работает:
+echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer         
+Вывод:     
+  "
+  Please
+  tokenize
+  this
+  text
+  .
+  "
+  PTBTokenizer tokenized 7 tokens at 115,97 tokens per second.
+
 #### 2. Перевести его на русский язык 
 #### 3. Дообучить модель bart-large-cnn, чтобы она работала с русским языком
 
