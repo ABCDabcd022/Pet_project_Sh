@@ -46,6 +46,8 @@ echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
   "       
   PTBTokenizer tokenized 7 tokens at 115,97 tokens per second.
 
+Токенизация датасета      
+
 #### 2. Перевести его на русский язык 
 #### 3. Дообучить модель bart-large-cnn, чтобы она работала с русским языком
 
