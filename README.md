@@ -49,6 +49,8 @@ echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
 Токенизация датасета      
 Скачиваем репозиторий с датасетом:       
 git clone https://github.com/becxer/cnn-dailymail/        
+Перейдите в директорию, куда вы скачали репозиторий с датасетом       
+python make_datafiles.py C:\00Projects\Pet_project_A_Sh\cnn\stories C:\00Projects\Pet_project_A_Sh\dailymail\stories            
 
 #### 2. Перевести его на русский язык 
 #### 3. Дообучить модель bart-large-cnn, чтобы она работала с русским языком
