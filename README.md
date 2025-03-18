@@ -50,7 +50,18 @@ echo "Please tokenize this text." | java edu.stanford.nlp.process.PTBTokenizer
 Скачиваем репозиторий с датасетом:       
 git clone https://github.com/becxer/cnn-dailymail/        
 Перейдите в директорию, куда вы скачали репозиторий с датасетом       
-python make_datafiles.py C:\00Projects\Pet_project_A_Sh\cnn\stories C:\00Projects\Pet_project_A_Sh\dailymail\stories            
+python make_datafiles.py C:\00Projects\Pet_project_A_Sh\cnn\stories C:\00Projects\Pet_project_A_Sh\dailymail\stories       
+Перед эти в файле make_datafiles.py настроить путь:       
+```python
+command = [
+    'java',
+    '-cp', 'C:/00Projects/Pet_project_A_Sh/stanford-corenlp-full-2016-10-31/*',  # Укажи путь к JAR-файлам
+    'edu.stanford.nlp.process.PTBTokenizer',
+    '-ioFileList',
+    '-preserveLines',
+    'mapping.txt'
+]
+```
 
 #### 2. Перевести его на русский язык 
 #### 3. Дообучить модель bart-large-cnn, чтобы она работала с русским языком
