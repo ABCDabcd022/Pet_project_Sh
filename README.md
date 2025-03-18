@@ -55,7 +55,7 @@ python make_datafiles.py C:\00Projects\Pet_project_A_Sh\cnn\stories C:\00Project
 ```python
 command = [
     'java',
-    '-cp', 'C:/00Projects/Pet_project_A_Sh/stanford-corenlp-full-2016-10-31/*',  # Укажи путь к JAR-файлам
+    '-cp', 'C:/00Projects/Pet_project_A_Sh/stanford-corenlp-4.5.8/*',  # Укажи путь к JAR-файлам
     'edu.stanford.nlp.process.PTBTokenizer',
     '-ioFileList',
     '-preserveLines',
